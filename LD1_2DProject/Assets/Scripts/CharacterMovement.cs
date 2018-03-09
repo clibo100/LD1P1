@@ -46,7 +46,7 @@ public class CharacterMovement : MonoBehaviour {
 		CharacterController controller = GetComponent<CharacterController>();
 		if (controller.isGrounded) 
 		{
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, 0);
             moveDirection = transform.TransformDirection(moveDirection);
 			isJumping = false;
 			DBMovement();
@@ -70,7 +70,7 @@ public class CharacterMovement : MonoBehaviour {
 
 
         moveDirection.y -= gravity * Time.deltaTime;
-        moveDirection.x = Input.GetAxis("Horizontal") * speed;
+        moveDirection.x = Input.GetAxisRaw("Horizontal") * speed;
         DBMovement();
 		controller.Move(moveDirection * Time.deltaTime);
 		currentX = System.Math.Round(this.gameObject.transform.position.x, 2);
