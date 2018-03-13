@@ -42,6 +42,7 @@ public class DroppingPlatform : MonoBehaviour
 		rb.useGravity = false;
 		//Move Platform back to original position
 		this.gameObject.transform.position = originalPosition;
+        this.gameObject.transform.rotation = Quaternion.identity;
 		//Turn off "On" Particle Effect
 		particleFX.SetActive(false);
 	}
