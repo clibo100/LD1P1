@@ -26,7 +26,7 @@ public class DroppingPlatform : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.tag != "Collectible")
+		if(other.tag == "Player")
 		{
 			rb.useGravity = true;
 			particleFX.SetActive(true);

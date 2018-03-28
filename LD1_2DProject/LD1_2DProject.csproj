@@ -282,6 +282,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AlterJump.cs" />
+    <Compile Include="Assets\Ceiling.cs" />
+    <Compile Include="Assets\PlatformMovement.cs" />
+    <Compile Include="Assets\PortalTransport.cs" />
     <Compile Include="Assets\Scripts\AnimateCharacter.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
@@ -298,6 +302,8 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\TriggerDeath.cs" />
     <Compile Include="Assets\Scripts\WinTrigger.cs" />
+    <Compile Include="Assets\SpikeClusterRotation.cs" />
+    <Compile Include="Assets\VerticalPlatformMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sounds\8 Bit Retro Rampage Free\Readme.txt" />
